@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<script>
+		function getConfirmation()
+		{
+			var retval=confirm("do you want to continue");
+			if(retval==true)
+			{
+                  document.write ("User wants to continue!");
+                  return true;
+            }
+            else
+            {
+               document.write ("User does not want to continue!");
+               return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<title> CONFORMATION BOX </title>
+	<form>
+		<input type="submit" name="submit" onclick="getConfirmation();">
+	</form>
+</body>

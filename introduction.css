@@ -1,0 +1,20 @@
+body{
+		background-color: pink;
+}
+h1{
+	color:red;
+	font-size: 50px;
+	font-family: Helvetica;
+	font-style: italic;
+	font-variant: inherit;
+	font-weight: bold;
+
+}
+p{
+	color:green;
+	font-size: 30px;
+	font-family: Helvetica;
+	font-style:italic;
+	font-variant: inherit;
+	font-weight: lighter;
+}

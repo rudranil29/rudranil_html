@@ -1,0 +1,60 @@
+<!Doctype html>
+<html>
+<head>
+	<title>FORM VALIDATION</title>
+</head>
+<script type="text/javascript">
+      function validate()
+      {
+      
+         if( document.registration.Name.value == "" )
+         {
+            alert( "Please provide your name!" );
+            document.registration.Name.focus() ;
+            return false;
+         }
+         
+         if( document.registration.Email.value == "" )
+         {
+            alert( "Please provide your Email!" );
+            document.registration.Email.focus() ;
+            return false;
+         }
+         
+         if( document.registration.Zip.value == "" ||
+         isNaN( document.registration.Zip.value ) ||
+         document.registration.Zip.value.length != 5 )
+         {
+            alert( "Please provide a zip in the format #####." );
+            document.registration.Zip.focus() ;
+            return false;
+         }
+         if( document.registration.Country.value == "0" )
+         {
+            alert( "Please provide your country!" );
+            return false;
+         }
+         return( true );
+      }
+   </script>
+<body>
+	<form name="registration" onsubmit="return validate();">
+	<pre>
+	NAME :<input type="text" name="Name"/>
+	
+	EMAIL:<input type="text" name="Email" />
+	
+	zip  :<input type="text" name="Zip" />
+	
+	      <select name="Country">
+                     <option value="0" selected>[choose yours]</option>
+                     <option value="1">USA</option>
+                     <option value="2">UK</option>
+                     <option value="3">INDIA</option>
+          </select>
+    
+               <input type="submit" value="submit">
+     </pre>
+     </form>
+ </body>
+ </html>
